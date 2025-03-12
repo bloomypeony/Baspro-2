@@ -4,13 +4,32 @@ status = input("Masukkan Status   : ").strip().lower()
 golongan = input("Masukkan Golongan : ").strip().capitalize()
 
 gaji_pokok = 1000000 if status == "pegawai tetap" else 750000
-bonus = {"A": 200000, "B": 400000, "C": 550000} if status == "pegawai tetap" else {"A": 150000, "B": 275000, "C": 480000}
 
-if golongan in bonus:
-    gaji_total = gaji_pokok + bonus[golongan]
-    
-    print(f"Gaji Pokok : {gaji_pokok:,}")
-    print(f"Bonus      : {bonus[golongan]:,}")
-    print(f"Gaji Total : {gaji_total:,}")
+if status == "pegawai tetap":
+    if golongan == "A":
+        bonus = 200000
+    elif golongan == "B":
+        bonus = 400000
+    elif golongan == "C":
+        bonus = 550000
+    else:
+        print("Golongan tidak valid")
+        exit()
+elif status == "pegawai honor":
+    if golongan == "A":
+        bonus = 150000
+    elif golongan == "B":
+        bonus = 275000
+    elif golongan == "C":
+        bonus = 480000
+    else:
+        print("Golongan tidak valid")
+        exit()
 else:
-    print("Golongan tidak valid!")
+    print("Status tidak valid!")
+    exit()
+
+gaji_total = gaji_pokok + bonus
+print(f"Gaji Pokok : {gaji_pokok:,}")
+print(f"Bonus      : {bonus:,}")
+print(f"Gaji Total : {gaji_total:,}")
