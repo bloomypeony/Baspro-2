@@ -1,0 +1,16 @@
+nama = input("Masukkan Nama     : ")
+nik = input("Masukkan NIK      : ")
+status = input("Masukkan Status   : ").strip().lower()
+golongan = input("Masukkan Golongan : ").strip().capitalize()
+
+gaji_pokok = 1000000 if status == "pegawai tetap" else 750000
+bonus = {"A": 200000, "B": 400000, "C": 550000} if status == "pegawai tetap" else {"A": 150000, "B": 275000, "C": 480000}
+
+if golongan in bonus:
+    gaji_total = gaji_pokok + bonus[golongan]
+    
+    print(f"Gaji Pokok : {gaji_pokok:,}")
+    print(f"Bonus      : {bonus[golongan]:,}")
+    print(f"Gaji Total : {gaji_total:,}")
+else:
+    print("Golongan tidak valid!")
