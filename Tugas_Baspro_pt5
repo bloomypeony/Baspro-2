@@ -1,0 +1,39 @@
+jumlah_karyawan = int(input("Masukkan jumlah karyawan: "))
+
+for i in range(jumlah_karyawan):
+    print(f"\nData Karyawan ke-{i+1}")
+    nama = input("Masukkan Nama     : ")
+    nik = input("Masukkan NIK      : ")
+    status = input("Masukkan Status   : ").strip().lower()
+    golongan = input("Masukkan Golongan : ").strip().capitalize()
+
+    gaji_pokok = 1000000 if status == "pegawai tetap" else 750000
+
+    if status == "pegawai tetap":
+        if golongan == "A":
+            bonus = 200000
+        elif golongan == "B":
+            bonus = 400000
+        elif golongan == "C":
+            bonus = 550000
+        else:
+            print("tidak valid")
+            continue
+    elif status == "pegawai honor":
+        if golongan == "A":
+            bonus = 150000
+        elif golongan == "B":
+            bonus = 275000
+        elif golongan == "C":
+            bonus = 480000
+        else:
+            print("Golongan tidak valid")
+            continue
+    else:
+        print("Status tidak valid!")
+        continue
+
+    gaji_total = gaji_pokok + bonus
+    print(f"Gaji Pokok : {gaji_pokok:,}")
+    print(f"Bonus      : {bonus:,}")
+    print(f"Gaji Total : {gaji_total:,}")

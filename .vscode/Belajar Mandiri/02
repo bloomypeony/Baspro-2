@@ -1,0 +1,19 @@
+#pangkat **
+a = 10
+b = 3
+hasil = a ** b
+print(a, '**', b, '=', hasil)
+
+#sisa pembagian(modulus) %
+hasil = a % b
+print(a, ':', b, '=', hasil)
+
+#pembulatan kebawa(floor division) //
+hasil = a // b
+print(a, '//', b, '=', hasil)
+
+x = 3
+y = 2
+z = 4
+hasil = (x+y)*z
+print('(', 'x', '+', 'y', ')', '*','z', '=', hasil)

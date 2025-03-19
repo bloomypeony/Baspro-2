@@ -1,0 +1,11 @@
+# data = input("Masukkan data: ")
+# print("data = ", data, "type = ", type(data))
+
+# data_int = int(input("Masukkan angka: "))
+# print("data = ", data, "type = ", type(data_int))
+
+# angka = float(input("Masukkan angka: "))
+# print("Angka adalah", angka)
+
+biner = bool(int(input("Masukkan nilai boolean: ")))
+print("Data = ", biner, "tipe = ", type(biner))
