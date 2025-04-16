@@ -1,0 +1,12 @@
+#struktur data
+
+tipeData1 = [1, 2, 3]
+tipeData2 = (1, 2, 3)
+tipeData3 = {
+    "nomor":"1",
+    "nomor":"2",
+    "nomor":"3",
+}
+tipeData4 = {"1", "2"}
+print(type(tipeData1[2:1]))
+#print(type,(tipeData1), type,(tipeData2), type,(tipeData3), type,(tipeData4),)
