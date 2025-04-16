@@ -1,4 +1,4 @@
-umur = int(input("Masukkan umur: "))
+umur = int(input("masukkan umur: "))
 
 if umur <= 5:
     print("balita")

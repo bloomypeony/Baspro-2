@@ -12,6 +12,7 @@ print(a, ':', b, '=', hasil)
 hasil = a // b
 print(a, '//', b, '=', hasil)
 
+# (), Eksponen, kabataku
 x = 3
 y = 2
 z = 4

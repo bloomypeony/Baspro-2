@@ -13,10 +13,11 @@
 #print("Bilangan diatas ada %d bilangan" %count)
 #print("Jumlah semua bilangan adalah %d" %penambahan)
 
-nilai = [0, 3, 4, 6]
+nilai = [2, 3, 4, 6]
 
 for n in nilai:
     if n %2 != 0:
         break
     print(n)
+    
 print("perulangan selesai")

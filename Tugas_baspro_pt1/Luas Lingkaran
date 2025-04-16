@@ -6,5 +6,3 @@ phi = 3.14
 luas = phi*r*r
 
 print("Luas lingkaran adalah", luas, "cm²")
-
-

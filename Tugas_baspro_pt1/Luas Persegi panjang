@@ -1,4 +1,4 @@
-print("Program Menghitung Persegi panjang")
+print("Program Menghitung Persegi Panjang")
 
 panjang = float (input("Masukkan panjang: "))
 lebar = float (input("Masukkan lebar: "))
